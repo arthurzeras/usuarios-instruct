@@ -1,0 +1,10 @@
+
+
+/* Cabeçalho */
+
+#cabecalho {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--azul);
+}
