@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+.titulos {
+  font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+	padding: 0;
+  line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+:root {
+  --azul: #01A4E0;
+  --azul-escuro:  #1F3A54;
+  --azul-variacao: #0080B6;
+
+  --claro: #E2E7E9;
+  --verde: #60B070;
+  --laranja: #FAA52F;
+  --vermelho: #DA3338;
+  --vermelho-variacao: #A7214D;
+}
