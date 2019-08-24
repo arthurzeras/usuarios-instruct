@@ -1,10 +1,27 @@
 
 
 /* Cabeçalho */
-
 #cabecalho {
   padding: 20px;
   display: flex;
   justify-content: center;
   background-color: var(--azul);
+}
+
+/* Conteúdo */
+#conteudo {
+  padding: 15px;
+  height: calc(100vh - 91px);
+  background-color: var(--claro);
+}
+
+#cabecalho-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#selecionador-filtro {
+  height: 30px;
+  font-size: 1rem;
 }

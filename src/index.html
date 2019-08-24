@@ -14,10 +14,24 @@
   <link href="./assets/principal.css" rel="stylesheet">
 </head>
 <body>
-  <div class="principal">
+  <div class="principal" id="app">
     <header id="cabecalho">
       <img src="https://instruct.com.br/wp-content/themes/instruct-beta/img/instruct.svg" alt="Logo instruct">
     </header>
+
+    <div id="conteudo">
+      <header id="cabecalho-conteudo">
+        <h1>Usuários Instruct</h1>
+
+        <div class="filtros">
+          <label for="selecionador-filtro">Filtrar usuários por domínio do e-mail:</label>
+          <select id="selecionador-filtro" v-model="filtro">
+            <option value="">Todos</option>
+            <option v-for="filtro in filtros" :key="filtro">{{ filtro }}</option>
+          </select>
+        </div>
+      </header>
+    </div>
   </div>
 
   
