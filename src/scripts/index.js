@@ -7,11 +7,27 @@ new Vue({
   data: {
     filtro: '',
     usuarios: [],
-    buscandoUsuarios: true,
-    filtros: ['.biz', '.org', '.net']
+    buscandoUsuarios: true
   },
   created () {
     this.buscarUsuarios()
+  },
+  computed: {
+    filtros () {
+      return this.usuarios
+        .map(item => item.email.split('.').pop())
+        .reduce((acumulador, atual) => {
+          if (!acumulador.includes(atual)) {
+            acumulador.push(atual)
+          }
+
+          return acumulador
+        }, [])
+    },
+    listaFiltrada () {
+      if (!this.filtro) return this.usuarios
+      return this.usuarios.filter(usuario => usuario.email.endsWith(this.filtro))
+    }
   },
   methods: {
     buscarUsuarios () {

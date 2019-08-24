@@ -39,7 +39,7 @@
         </div>
 
         <div class="usuarios-lista" v-else>
-          <div class="usuario-item" v-for="usuario in usuarios" :key="usuario.id">
+          <div class="usuario-item" v-for="usuario in listaFiltrada" :key="usuario.id">
             <div class="usuario-quadro">
               <h2>{{ usuario.name }}</h2>
 
