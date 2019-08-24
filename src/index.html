@@ -31,7 +31,7 @@
 
         <div class="filtros">
           <label for="selecionador-filtro">Filtrar e-mails:</label>
-          <select id="selecionador-filtro" v-model="filtro">
+          <select id="selecionador-filtro" v-model="filtro" :disabled="!filtros.length">
             <option value="">Todos</option>
             <option v-for="filtro in filtros" :key="filtro">{{ filtro }}</option>
           </select>
