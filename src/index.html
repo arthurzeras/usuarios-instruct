@@ -12,6 +12,7 @@
   <!-- CSS da aplicação -->
   <link href="./assets/padroes.css" rel="stylesheet">
   <link href="./assets/principal.css" rel="stylesheet">
+  <link href="./assets/animacoes.css" rel="stylesheet">
 </head>
 <body>
   <div class="principal" id="app">
@@ -31,6 +32,18 @@
           </select>
         </div>
       </header>
+
+      <section id="usuarios">
+        <div class="carregando" v-if="buscandoUsuarios">
+          <img src="./imagens/logo-icone.png" width="50" alt="Carregando">
+        </div>
+
+        <div class="lista-usuarios" v-else>
+          <div class="usuario-item" v-for="usuario in usuarios" :key="usuario.id">
+            {{ usuario.name }}
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 

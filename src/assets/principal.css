@@ -25,3 +25,16 @@
   height: 30px;
   font-size: 1rem;
 }
+
+/* Usuários */
+#usuarios {
+
+}
+
+#usuarios .carregando {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px);
+  animation: opacidade 1.4s infinite;
+}
