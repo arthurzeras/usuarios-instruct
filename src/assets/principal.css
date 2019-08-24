@@ -33,6 +33,28 @@
   animation: opacidade 1.4s infinite;
 }
 
+#usuarios .usuarios-lista-erro {
+  padding: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--vermelho);
+  background-color: var(--claro);
+}
+
+#usuarios .usuarios-lista-erro button {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .4s;
+  color: var(--azul-variacao);
+  background-color: var(--branco);
+  border: 1px solid var(--azul-variacao);
+}
+
+#usuarios .usuarios-lista-erro button:hover {
+  background-color: var(--claro);
+}
+
 #usuarios .usuarios-lista {
   display: flex;
   margin: 0 -5px;

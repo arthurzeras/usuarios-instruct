@@ -5,6 +5,7 @@ Vue.http.options.root = 'http://jsonplaceholder.typicode.com/'
 new Vue({
   el: '#app',
   data: {
+    erro: null,
     filtro: '',
     usuarios: [],
     buscandoUsuarios: true
@@ -31,12 +32,15 @@ new Vue({
   },
   methods: {
     buscarUsuarios () {
+      this.buscandoUsuarios = true
+
       this.$http.get('users')
         .then(res => {
+          this.erro = null
           this.usuarios = res.data
         })
         .catch(erro => {
-          console.error(erro)
+          this.erro = 'Não foi possível buscar os usuários tente novamente'
         })
         .finally(() => {
           this.buscandoUsuarios = false
