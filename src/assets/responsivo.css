@@ -1,0 +1,26 @@
+@media (max-width: 576px) {
+  #cabecalho-conteudo h1 {
+    font-size: 1.5rem;
+  }
+
+  #cabecalho-conteudo .filtros {
+    display: flex;
+    font-size: .8rem;
+    flex-direction: column;
+  }
+
+  #cabecalho-conteudo .filtros select {
+    height: 25px;
+    margin: 5px 0;
+    font-size: .8rem;
+    background-color: var(--claro);
+  }
+
+  #usuarios {
+    margin-top: 10px;
+  }
+
+  #usuarios .usuario-item {
+    flex: 0 0 100%;
+  }
+}

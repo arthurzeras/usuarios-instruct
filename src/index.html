@@ -13,6 +13,7 @@
   <link href="./assets/padroes.css" rel="stylesheet">
   <link href="./assets/principal.css" rel="stylesheet">
   <link href="./assets/animacoes.css" rel="stylesheet">
+  <link href="./assets/responsivo.css" rel="stylesheet">
 </head>
 <body>
   <div class="principal" id="app">
@@ -25,7 +26,7 @@
         <h1>Usuários Instruct</h1>
 
         <div class="filtros">
-          <label for="selecionador-filtro">Filtrar usuários por domínio do e-mail:</label>
+          <label for="selecionador-filtro">Filtrar e-mails:</label>
           <select id="selecionador-filtro" v-model="filtro">
             <option value="">Todos</option>
             <option v-for="filtro in filtros" :key="filtro">{{ filtro }}</option>
