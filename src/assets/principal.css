@@ -12,11 +12,12 @@
 #conteudo {
   padding: 15px;
   height: calc(100vh - 91px);
-  background-color: var(--claro);
+  background-color: var(--azul-variacao);
 }
 
 #cabecalho-conteudo {
   display: flex;
+  color: var(--claro);
   align-items: center;
   justify-content: space-between;
 }
@@ -45,6 +46,7 @@
 
 #usuarios .usuario-item {
   padding: 0 5px;
+  transition: all .4s;
   flex: 0 0 33.333333%;
 }
 
