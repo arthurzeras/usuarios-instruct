@@ -27,10 +27,6 @@
 }
 
 /* Usuários */
-#usuarios {
-
-}
-
 #usuarios .carregando {
   display: flex;
   align-items: center;
@@ -38,3 +34,55 @@
   height: calc(100vh - 200px);
   animation: opacidade 1.4s infinite;
 }
+
+#usuarios .usuarios-lista {
+  display: flex;
+  margin: 0 -5px;
+  flex-wrap: wrap;
+  overflow: hidden auto;
+  max-height: calc(100vh - 200px);
+}
+
+#usuarios .usuario-item {
+  padding: 0 5px;
+  flex: 0 0 33.333333%;
+}
+
+#usuarios .usuario-quadro {
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: var(--branco);
+}
+
+#usuarios .usuario-quadro h2 {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+#usuarios .usuario-quadro .username-email {
+  font-size: .8rem;
+  text-transform: lowercase;
+  color: var(--azul-escuro);
+}
+
+#usuarios .usuario-quadro .website {
+  margin-top: 10px;
+}
+
+#usuarios .usuario-quadro .website a {
+  transition: .4s;
+  text-decoration: none;
+  color: var(--azul-variacao);
+}
+
+#usuarios .usuario-quadro .website a:hover { 
+  filter: brightness(0.7);
+}
+
+#usuarios .usuario-quadro .endereco div {
+  padding: 5px 0;
+  font-size: .8rem;
+  color: var(--azul-escuro);
+} 

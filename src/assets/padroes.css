@@ -29,4 +29,11 @@ h1, h2, h3, h4, h5, h6 {
   --laranja: #FAA52F;
   --vermelho: #DA3338;
   --vermelho-variacao: #A7214D;
+
+  --branco: #FFF;
+}
+
+hr {
+  margin: 15px 0;
+  border: 0.5px solid var(--claro);
 }
