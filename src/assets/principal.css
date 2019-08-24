@@ -1,5 +1,3 @@
-
-
 /* Cabeçalho */
 #cabecalho {
   padding: 20px;
@@ -12,7 +10,6 @@
 #conteudo {
   padding: 15px;
   height: calc(100vh - 91px);
-  background-color: var(--azul-variacao);
 }
 
 #cabecalho-conteudo {

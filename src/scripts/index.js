@@ -15,7 +15,7 @@ new Vue({
   computed: {
     filtros () {
       return this.usuarios
-        .map(item => item.email.split('.').pop())
+        .map(item => `.${item.email.split('.').pop()}`)
         .reduce((acumulador, atual) => {
           if (!acumulador.includes(atual)) {
             acumulador.push(atual)
