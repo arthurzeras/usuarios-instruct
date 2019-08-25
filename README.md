@@ -2,6 +2,8 @@
 
 Este projeto é um exercício de avaliação de conhecimentos técnicos para a [Instruct](https://instruct.com.br).
 
+O projeto está hospedado no Github pages e pode ser acessado por [aqui](https://arthurzeras.github.io/usuarios-instruct/src/).
+
 ## Executando
 
 > Foi feito totalmente estático e sem nenhuma dependência de ambiente de desenvolvimento.

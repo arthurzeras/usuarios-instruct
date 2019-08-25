@@ -1,6 +1,6 @@
 Vue.use(VueResource)
 
-Vue.http.options.root = 'http://jsonplaceholder.typicode.com/'
+Vue.http.options.root = 'https://jsonplaceholder.typicode.com/'
 
 new Vue({
   el: '#app',
